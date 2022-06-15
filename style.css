@@ -1,0 +1,23 @@
+body{
+    background-color: #eeeeee;
+}
+
+.nav-extended{
+    background-image: url("img/filme.jpg");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: soft-light;
+}
+
+.nav-header h1{
+    text-shadow: 2px 2px 5px black;
+}
+
+nav ul li .active{
+    border-bottom: solid 2px #FFF;
+}
+
+.fileee{
+    
+}
