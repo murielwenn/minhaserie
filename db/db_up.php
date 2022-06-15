@@ -7,7 +7,6 @@ $sql = "DROP TABLE IF EXISTS series";
 if ($db->exec($sql)) 
     echo "\nTabela apagada\n";
 
-
 $sql = "CREATE TABLE series (id INTEGER PRIMARY KEY AUTOINCREMENT,
     titulo VARCHAR(200) NOT NULL,
     poster VARCHAR(200),
