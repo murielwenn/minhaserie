@@ -46,7 +46,7 @@
                         <div class=" input-field file-field ">
                             <div class="btn grey darken-1">
                                 <span>Capa</span>
-                                <input type="file" multiple name="poster_file">
+                                <input type="file" name="poster_file">
                             </div>
                             <div class="file-path-wrapper">
                                 <input class="file-path validate" type="text" name="poster">
