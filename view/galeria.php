@@ -36,7 +36,7 @@ $series = $controller->index();
         <div class="row">
             
                 <?php foreach($series as $serie){ ?>
-                    <div class="col s12 m6 l3">
+                    <div class="col s6 m4 l3">
                         <div class="card hoverable">
                             <div class="card-image">
                                 <img src="<?php echo $serie->poster?>">
@@ -54,7 +54,7 @@ $series = $controller->index();
                             </div>
                             <div class="card-reveal">
                                 <span class="card-title grey-text text-darken-4"><?= $serie->titulo ?><i class="material-icons right">close</i></span>
-                                <p><?php echo substr($serie->sinopse, 0, 500) . "..."?></p>
+                                <p><?php echo substr($serie->sinopse, 0, 1000) ?></p>
                                 <button class="waves-effect waves-light btn-small right red accent-2 btn-delete" data-id="<?= $serie->id ?>"><i class="material-icons">delete</i></button>
                             </div>
                         </div>
