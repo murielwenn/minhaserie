@@ -52,6 +52,15 @@ class seriesController{
         header('Content-type: application/json');
         echo json_encode($result);
     }    
+
+    public function delete(int $id){
+
+        $seriesRepository = new SeriesRepositoryPDO();
+        $result = ['success' => $seriesRepository->delete($id)];
+        header('Content-type: application/json');
+        echo json_encode($result);
+    }    
+
 }
 
 

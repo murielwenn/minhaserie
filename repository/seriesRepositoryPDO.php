@@ -15,6 +15,8 @@ class seriesRepositoryPDO{
         $listaSeries = array();
         $sql = "SELECT * FROM series";
         $rs = $this->conexao->query($sql);
+        if (!$rs) return false;
+
         while ($serie = $rs->fetchObject()){
             array_push($listaSeries, $serie);
         }
@@ -36,12 +38,23 @@ class seriesRepositoryPDO{
     public function favoritar(int $id){
         $sql = "UPDATE series SET favorito = NOT favorito WHERE id=:id";
         $stmt = $this->conexao->prepare($sql);
-        $stmt->bindValue(':id', $id, PDO::PARAM_INT);
-        
+        $stmt->bindValue(':id', $id, PDO::PARAM_INT);        
         if($stmt->execute()){
             return "ok";
         }else{
             return "erro";
         }
     }
+
+    public function delete(int $id){
+        $sql = "DELETE FROM series WHERE id=:id";
+        $stmt = $this->conexao->prepare($sql);
+        $stmt->bindValue(':id', $id, PDO::PARAM_INT);        
+        if($stmt->execute()){
+            return "ok";
+        }else{
+            return "erro";
+        }
+    }
+
 }
