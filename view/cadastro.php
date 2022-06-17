@@ -43,8 +43,8 @@
                             </div>
             
                         </div>
-                        <div class=" input-field valign-wrapper">
-                            <div class="btn grey darken-1 file-field">
+                        <div class=" input-field file-field ">
+                            <div class="btn grey darken-1 input-field">
                                 <span>Capa</span>
                                 <input type="file" multiple name="poster_file">
                             </div>
