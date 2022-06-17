@@ -8,10 +8,11 @@ if ($db->exec($sql))
     echo "\nTabela apagada\n";
 
 $sql = "CREATE TABLE series (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    id INTEGER PRIMARY KEY AUTO_INCREMENT,
     titulo VARCHAR(200) NOT NULL,
     poster VARCHAR(200),
-    sinopse TEXT
+    sinopse TEXT,
+    favorito INT DEFAULT 0
     )";
 
 if ($db->exec($sql)) 
