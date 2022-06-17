@@ -11,7 +11,7 @@ class Conexao{
         $pass = $env["pass"];
         $user = $env["user"];
 
-        if($database === "mysql"){
+        if($databaseType === "mysql"){
             $database = "host=$server; dbname=$database";
         }
 
