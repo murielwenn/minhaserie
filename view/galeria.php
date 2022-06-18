@@ -39,7 +39,7 @@ $series = $controller->index();
                     <div class="col s6 m4 l3">
                         <div class="card hoverable">
                             <div class="card-image">
-                                <img src="<?php echo $serie->poster?>">
+                                <img class="fotoo"   src="<?php echo $serie->poster?>">
             
                                 <button class="btn-fav btn-floating halfway-fab waves-effect waves-light red" data-id="<?= $serie->id ?>">
                                     <i class="material-icons"><?= ($serie->favorito)? "favorite":"favorite_border" ?></i>
