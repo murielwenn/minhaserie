@@ -44,7 +44,7 @@
             
                         </div>
                         <div class=" input-field file-field ">
-                            <div class="btn grey darken-1">
+                            <div class="btn grey darken-1 file-field">
                                 <span>Capa</span>
                                 <input type="file" name="poster_file">
                             </div>
