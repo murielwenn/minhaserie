@@ -34,7 +34,6 @@ $series = $controller->index();
 
     <div class="container">
         <div class="row">
-            
                 <?php foreach($series as $serie){ ?>
                     <div class="col s6 m4 l3">
                         <div class="card hoverable">

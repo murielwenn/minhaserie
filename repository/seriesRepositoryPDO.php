@@ -13,7 +13,7 @@ class seriesRepositoryPDO{
     public function listarTodos():array{
 
         $listaSeries = array();
-        $sql = "SELECT * FROM series";
+        $sql = "SELECT * FROM series ORDER BY titulo";
         $rs = $this->conexao->query($sql);
         if (!$rs) return false;
 
